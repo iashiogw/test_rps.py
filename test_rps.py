@@ -1,7 +1,7 @@
 import pytest
 from rps1 import rps  
 
-# These are all test cases for a tie situation
+# These are all test cases relating to a tie situation
 def testrpstie():
     # This code will result in a tie
     result = rps("rock", "rock")
@@ -18,7 +18,7 @@ def testrpstie():
    
     assert result == 0, f"Expected 0 (tie), but got {result}"
 
-# Test cases for player1 winning scenarios
+# These are all test cases for p1 relating to winning scenarios
 def testrpsp1wins():
     # This code would result in p1 winning from Rock vs Scissors 
     result = rps("rock", "scissors")
